@@ -54,7 +54,7 @@ export const useLoader = () => {
             hideLoader();
             showApp();
             clearTimeout(forceHideTimeout);
-        }, 6000);
+        }, 3500);
     }, []);
 
     return { isPosterOpened, onOpenPoster };

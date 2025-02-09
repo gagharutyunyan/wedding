@@ -1,0 +1,93 @@
+.poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../assets/IMG_7499.JPG');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+
+  &_content {
+    margin-top: auto;
+    margin-bottom: 200px;
+  }
+
+  &_title {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 0;
+    margin-bottom: 40px;
+    animation: left 1s linear;
+
+    &_line {
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
+
+  &_subtitle {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 6px;
+    opacity: 0;
+    animation: right 1.7s linear forwards;
+    backface-visibility: hidden;
+  }
+
+  &_paragraph {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    animation: appear 1s linear;
+  }
+}
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    transform: scale(1, 1) translateX(-135px);
+    animation-timing-function: ease-in;
+  }
+  1% {
+    opacity: 0;
+    transform: scale(0.9, 0.9) translateX(-120px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1) translateX(0);
+  }
+}
+
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: scale(1, 1);
+    animation-timing-function: ease-in;
+  }
+  1% {
+    opacity: 0;
+    transform: scale(0.9, 0.9);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}

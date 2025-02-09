@@ -8,13 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-public
-src
-eslint.config.js
-vite.config.js
-index.html
-package.json
-yarn.lock
+dist
 dist-ssr
 *.local
 

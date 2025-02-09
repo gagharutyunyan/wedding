@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-
 import './index.scss';
 
 export const Video = () => {

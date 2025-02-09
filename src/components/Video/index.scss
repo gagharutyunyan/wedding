@@ -25,6 +25,7 @@
       font-weight: 500;
       animation: left_1 1s linear;
       color: #adaaaa;
+      opacity: 0.3;
 
       &_1 {
         position: absolute;
@@ -99,16 +100,16 @@
 @keyframes left_1 {
   0% {
     opacity: 0;
-    transform: scale(1, 1) translateX(-135px);
+    transform: scale(1, 1) translateX(135px);
     animation-timing-function: ease-in;
   }
   1% {
     opacity: 0;
-    transform: scale(0.9, 0.9) translateX(-120px);
+    transform: scale(0.9, 0.9) translateX(120px);
     animation-timing-function: ease-out;
   }
   100% {
-    opacity: 1;
+    opacity: 0.3;
     transform: scale(1, 1) translateX(0);
   }
 }

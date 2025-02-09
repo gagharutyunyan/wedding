@@ -19,7 +19,16 @@ export const usePlayAudio = () => {
     useEffect(() => {
         const audio = document.getElementById('audio');
         setAudio(audio);
-    }, []);
+
+        // Остановка и восстановление музыки при изменении видимости страницы
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
+                pauseAudio();
+            } else {
+                playAudio();
+            }
+        });
+    }, [audio]);
 
     return { playAudio, pauseAudio };
 };

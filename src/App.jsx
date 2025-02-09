@@ -16,6 +16,9 @@ function App() {
                 </Visibility>
                 <Visibility visible={isPosterOpened}>
                     <Video />
+                    <div style={{height: 200}}>
+                        helllo
+                    </div>
                 </Visibility>
             </div>
         </>

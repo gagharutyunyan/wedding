@@ -6,10 +6,19 @@ export const useLoader = () => {
     const onOpenPoster = () => setIsPosterOpened(true);
 
     useEffect(() => {
-        document.addEventListener('readystatechange', function () {
-            const loadWrapper = document.querySelector('.load-wrapper');
-            const app = document.querySelector('.application');
+        const loadWrapper = document.querySelector('.load-wrapper');
+        const app = document.querySelector('.application');
 
+        // Функция скрытия прелоадера
+        function hideLoader() {
+            loadWrapper.style.display = 'none';
+        }
+
+        function showApp() {
+            loadWrapper.style.visibility = 'visible';
+        }
+
+        document.addEventListener('readystatechange', function () {
             // Проверка загрузки медиаэлементов
             function checkMediaLoaded() {
                 const mediaElements = document.querySelectorAll('video, audio');
@@ -38,14 +47,14 @@ export const useLoader = () => {
                 }
                 clearInterval(checkInterval);
             }, 500);
-
-            // Принудительное скрытие через 6 секунд
-            const forceHideTimeout = setTimeout(() => {
-                hideLoader();
-                showApp();
-                clearTimeout(forceHideTimeout);
-            }, 6000);
         });
+
+        // Принудительное скрытие через 6 секунд
+        const forceHideTimeout = setTimeout(() => {
+            hideLoader();
+            showApp();
+            clearTimeout(forceHideTimeout);
+        }, 6000);
     }, []);
 
     return { isPosterOpened, onOpenPoster };

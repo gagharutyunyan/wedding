@@ -15,7 +15,8 @@
 
   &_content {
     margin-top: auto;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+    text-align: center;
 
     &_title {
       position: relative;
@@ -128,5 +129,36 @@
   100% {
     opacity: 1;
     transform: scale(1, 1);
+  }
+}
+
+.loader_down {
+  width: 15px;
+  height: 20px;
+  margin-left: 15px;
+  background: #000;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: bump 0.4s ease-in infinite alternate;
+}
+
+.loader_down::after {
+  content: '';
+  box-sizing: border-box;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  border: 15px solid transparent;
+  border-top-color: #000;
+}
+
+@keyframes bump {
+  0% {
+    transform: translate(-50%, 20px);
+  }
+  100% {
+    transform: translate(-50%, 10px);
   }
 }

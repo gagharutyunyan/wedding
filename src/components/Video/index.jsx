@@ -4,10 +4,7 @@ export const Video = () => {
     return (
         <div className="video_container">
             <video className="video_preview" preload="auto" muted playsInline autoPlay="autoplay" loop="loop">
-                <source
-                    src="https://dl.dropboxusercontent.com/s/scl/fi/53uofrjqdz22c0y61284c/111.mp4?rlkey=1jusg6xwvmxaf2xgql8kw82dv&e=1&st=ux19rodh&dl=0"
-                    type="video/mp4"
-                />
+                <source src="/wedding/video.mp4" type="video/mp4" />
             </video>
             <div className="video_content">
                 <div className="video_content_title">

@@ -4,7 +4,7 @@ export const WeddingLocation = () => {
     return (
         <div className="wedding-location">
             <div className="wedding-location_poster">
-                <img src="/wedding/church.jpg" alt="" />
+                <img src="/church.jpg" alt="" />
             </div>
             <div className="wedding-location_content">
                 <div className="wedding-location_title welcome_title">

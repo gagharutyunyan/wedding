@@ -57,16 +57,16 @@ const Swipe = () => {
             modules={[EffectCube, Autoplay]}
         >
             <SwiperSlide>
-                <img src="/wedding/welcome_poster_1.jpg" alt="welcome" />
+                <img src="/welcome_poster_1.jpg" alt="welcome" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="/wedding/welcome_poster_2.jpg" alt="welcome" />
+                <img src="/welcome_poster_2.jpg" alt="welcome" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="/wedding/welcome_poster_3.jpg" alt="welcome" />
+                <img src="/welcome_poster_3.jpg" alt="welcome" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="/wedding/welcome_poster_4.jpg" alt="welcome" />
+                <img src="/welcome_poster_4.jpg" alt="welcome" />
             </SwiperSlide>
         </Swiper>
     );

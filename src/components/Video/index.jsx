@@ -4,7 +4,7 @@ export const Video = () => {
     return (
         <div className="video_container">
             <video className="video_preview" preload="auto" muted playsInline autoPlay="autoplay" loop="loop">
-                <source src="/wedding/video.mp4" type="video/mp4" />
+                <source src="/video.mp4" type="video/mp4" />
             </video>
             <div className="video_content">
                 <div className="video_content_title">

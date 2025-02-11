@@ -9,18 +9,20 @@ import './index.scss';
 export const Welcome = () => {
     return (
         <div className="welcome">
-            <div className="welcome_title">
-                <div className="welcome_title_line"></div>
-                <span>Dear Guests!</span>
-            </div>
-            <div className="welcome_description mont">
-                <div className="welcome_description_1">
-                    Случилось невероятное - наша безграничная любовь дала повод собрать всех родных и близких
-                    вместе!
+            <div className="animate-appear">
+                <div className="welcome_title">
+                    <div className="welcome_title_line"></div>
+                    <span className="">Dear Guests!</span>
                 </div>
-                <div className="welcome_description_2">
-                    С радостью и большой любовью хотим пригласить вас разделить с нами трогательный и важный
-                    момент нашей жизни!
+                <div className="welcome_description mont ">
+                    <div className="welcome_description_1">
+                        Случилось невероятное - наша безграничная любовь дала повод собрать всех родных и
+                        близких вместе!
+                    </div>
+                    <div className="welcome_description_2">
+                        С радостью и большой любовью хотим пригласить вас разделить с нами трогательный и
+                        важный момент нашей жизни!
+                    </div>
                 </div>
             </div>
             <div className="welcome_poster">

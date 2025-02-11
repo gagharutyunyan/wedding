@@ -116,3 +116,45 @@ button {
     display: flex;
     justify-content: center;
 }
+
+.appear-animation {
+    animation: appear_1 1.6s linear;
+}
+
+.appear-animation-slider {
+    animation: appear_1 1.6s linear;
+}
+
+@keyframes appear_animation {
+    0% {
+        opacity: 0;
+        transform: scale(1, 1);
+        animation-timing-function: ease-in;
+    }
+    1% {
+        opacity: 0;
+        transform: scale(0.8, 0.8);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes appear_animation_slider {
+    0% {
+        opacity: 0;
+        transform: scale(1, 1);
+        animation-timing-function: ease-in;
+    }
+    1% {
+        opacity: 0;
+        transform: scale(0.4, 0.4);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}

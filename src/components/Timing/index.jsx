@@ -2,7 +2,7 @@ import './index.scss';
 
 export const Timing = () => {
     return (
-        <div className="timing">
+        <div className="timing animate-appear">
             <div className="timing_title outfit">ТАЙМИНГ</div>
             <ul className="timing_list mont">
                 <li className="timing_list_item">

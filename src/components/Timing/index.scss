@@ -1,7 +1,46 @@
 .timing {
-  padding-top: 40px;
+  font-size: 26px;
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &_title {
-
+    font-size: 46px;
   }
+
+  &_list {
+    &_item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      border-bottom: 1px solid #b7b7b7;
+      padding: 15px 3px;
+
+      &-left {
+        font-size: 32px;
+        width: 25%;
+        line-height: 0;
+        flex: 0.35;
+      }
+
+      &-right {
+        font-size: 18px;
+        display: inline-flex;
+        align-items: baseline;
+        color: #291e16;
+        flex: 1;
+      }
+
+      &-right1 {
+        width: 75%;
+      }
+    }
+  }
+}
+
+.h-23 {
+  font-size: 30px;
 }

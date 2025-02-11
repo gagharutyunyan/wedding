@@ -3,6 +3,7 @@ import { useLoader } from './hooks';
 import {
     Audio,
     Container,
+    Location,
     PreviewPoster,
     Timing,
     Video,
@@ -39,6 +40,7 @@ function App() {
                     {isPosterOpened && <Welcome />}
                     <Timing />
                     <WeddingLocation />
+                    {isPosterOpened && <Location />}
                 </Container>
             </Visibility>
             <Audio />

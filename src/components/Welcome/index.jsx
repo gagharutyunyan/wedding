@@ -41,13 +41,14 @@ const Swipe = () => {
                 swiperRef.current.swiper.autoplay.start();
             }
         });
-        const swiper = document.querySelector('.swiper');
+        const swiper = document.querySelector('.swiper-welcome');
         observer.observe(swiper);
     }, []);
 
     return (
         <Swiper
             ref={swiperRef}
+            speed={700}
             autoplay={{
                 pauseOnMouseEnter: false,
                 disableOnInteraction: false,
@@ -55,6 +56,7 @@ const Swipe = () => {
             effect="cube"
             grabCursor={true}
             modules={[EffectCube, Autoplay]}
+            className="swiper-welcome"
         >
             <SwiperSlide>
                 <img src="/welcome_poster_1.jpg" alt="welcome" />

@@ -1,6 +1,15 @@
 import { useEffect } from 'react';
 import { useLoader } from './hooks';
-import { Audio, Container, PreviewPoster, Timing, Video, Visibility, Welcome } from './components';
+import {
+    Audio,
+    Container,
+    PreviewPoster,
+    Timing,
+    Video,
+    Visibility,
+    WeddingLocation,
+    Welcome,
+} from './components';
 
 import './App.css';
 
@@ -29,6 +38,7 @@ function App() {
                     <Video />
                     {isPosterOpened && <Welcome />}
                     <Timing />
+                    <WeddingLocation />
                 </Container>
             </Visibility>
             <Audio />

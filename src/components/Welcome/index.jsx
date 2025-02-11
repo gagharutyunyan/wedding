@@ -1,5 +1,6 @@
+import { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCards } from 'swiper/modules';
+import { Autoplay, EffectCube } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/effect-cards';
@@ -26,21 +27,47 @@ export const Welcome = () => {
                 </div>
             </div>
             <div className="welcome_poster">
-                <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]}>
-                    <SwiperSlide>
-                        <img src="/wedding/welcome_poster_1.jpg" alt="welcome" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="/wedding/welcome_poster_2.jpg" alt="welcome" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="/wedding/welcome_poster_3.jpg" alt="welcome" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="/wedding/welcome_poster_4.jpg" alt="welcome" />
-                    </SwiperSlide>
-                </Swiper>
+                <Swipe />
             </div>
         </div>
+    );
+};
+
+const Swipe = () => {
+    const swiperRef = useRef(null);
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                swiperRef.current.swiper.autoplay.start();
+            }
+        });
+        const swiper = document.querySelector('.swiper');
+        observer.observe(swiper);
+    }, []);
+
+    return (
+        <Swiper
+            ref={swiperRef}
+            autoplay={{
+                pauseOnMouseEnter: false,
+                disableOnInteraction: false,
+            }}
+            effect="cube"
+            grabCursor={true}
+            modules={[EffectCube, Autoplay]}
+        >
+            <SwiperSlide>
+                <img src="/wedding/welcome_poster_1.jpg" alt="welcome" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src="/wedding/welcome_poster_2.jpg" alt="welcome" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src="/wedding/welcome_poster_3.jpg" alt="welcome" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src="/wedding/welcome_poster_4.jpg" alt="welcome" />
+            </SwiperSlide>
+        </Swiper>
     );
 };

@@ -5,7 +5,6 @@ export const usePlayAudio = () => {
 
     const playAudio = () => {
         if (audio) {
-            audio.volume = 0.3;
             audio.play();
         }
     };
@@ -18,6 +17,7 @@ export const usePlayAudio = () => {
 
     useEffect(() => {
         const audio = document.getElementById('audio');
+        audio.volume = 0.3;
         setAudio(audio);
 
         // Остановка и восстановление музыки при изменении видимости страницы

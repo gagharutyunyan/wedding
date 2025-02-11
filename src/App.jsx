@@ -1,5 +1,5 @@
 import { useLoader } from './hooks';
-import { Audio, PreviewPoster, Video, Visibility } from './components';
+import { Audio, Container, PreviewPoster, Timing, Video, Visibility, Welcome } from './components';
 
 import './App.css';
 
@@ -10,8 +10,11 @@ function App() {
         <>
             {!isPosterOpened && <PreviewPoster onOpenPoster={onOpenPoster} />}
             <Visibility visible={isPosterOpened}>
-                <Video />
-                <div style={{ height: 200 }}>helllo</div>
+                <Container>
+                    <Video />
+                    {isPosterOpened && <Welcome />}
+                    <Timing />
+                </Container>
             </Visibility>
             <Audio />
         </>

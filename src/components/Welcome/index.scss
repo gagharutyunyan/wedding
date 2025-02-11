@@ -1,0 +1,73 @@
+.welcome {
+  margin-top: 40px;
+
+  &_title {
+    display: flex;
+    gap: 15px;
+    font-size: 45px;
+
+    span {
+      white-space: nowrap;
+    }
+
+    &_line {
+      position: relative;
+      width: 60px;
+
+      &:after {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: 2px;
+        background: black;
+        content: "";
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  &_description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+
+    &_1 {
+      text-align: left;
+      max-width: 75%;
+    }
+
+    &_2 {
+      text-align: left;
+      margin-left: 100px;
+    }
+  }
+
+  &_poster {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+
+
+.swiper {
+  width: 320px;
+  max-width: 80%;
+  height: 100%;
+  margin-left: unset;
+  margin-right: unset;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+}

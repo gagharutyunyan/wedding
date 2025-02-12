@@ -24,7 +24,7 @@ export const Location = () => {
                     назад.
                 </div>
                 <div className="location_btn-container mont">
-                    <a href="https://yandex.ru/maps/-/CHqNrBkp" target="_blank" className="location_btn">
+                    <a href="https://yandex.ru/maps/-/CHqbyAPc" target="_blank" className="location_btn">
                         Перейти на карту
                     </a>
                 </div>
@@ -50,7 +50,7 @@ const Swipe = () => {
             ref={swiperRef}
             speed={1000}
             autoplay={{
-                delay: 4000,
+                delay: 3000,
                 pauseOnMouseEnter: false,
                 disableOnInteraction: false,
             }}

@@ -1,0 +1,67 @@
+.dress-code {
+  margin-top: 60px;
+
+  &_title {
+    display: flex;
+    gap: 15px;
+    font-size: 40px;
+
+    span {
+      white-space: nowrap;
+    }
+
+    &_line {
+      position: relative;
+      width: 60px;
+
+      &:after {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: 2px;
+        background: black;
+        content: "";
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  &_description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 30px;
+  }
+
+  &_poster {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  &_palette {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+
+.swiper-dress-code {
+  width: 90%;
+  height: 500px;
+  margin-left: unset;
+  margin-right: unset;
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+}

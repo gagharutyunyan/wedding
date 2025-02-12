@@ -3,6 +3,7 @@ import { useLoader } from './hooks';
 import {
     Audio,
     Container,
+    DressCode,
     Location,
     PreviewPoster,
     Timing,
@@ -33,7 +34,7 @@ function App() {
 
     return (
         <>
-            {!isPosterOpened && <PreviewPoster onOpenPoster={onOpenPoster} />}
+            <PreviewPoster onOpenPoster={onOpenPoster} isPosterOpened={isPosterOpened} />
             <Visibility visible={isPosterOpened}>
                 <Container>
                     <Video />
@@ -41,6 +42,7 @@ function App() {
                     <Timing />
                     <WeddingLocation />
                     {isPosterOpened && <Location />}
+                    {isPosterOpened && <DressCode />}
                 </Container>
             </Visibility>
             <Audio />

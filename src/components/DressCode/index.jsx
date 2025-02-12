@@ -36,13 +36,12 @@ const Swipe = () => {
         <Swiper
             speed={1500}
             autoplay={{
-                delay: 1000000,
                 pauseOnMouseEnter: false,
                 disableOnInteraction: false,
             }}
             zoom={true}
             cardsEffect={{
-                perSlideRotate: 5,
+                perSlideRotate: 4,
             }}
             effect="cards"
             grabCursor={true}

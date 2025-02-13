@@ -1,5 +1,5 @@
 .welcome {
-  margin-top: 40px;
+  margin-top: 60px;
 
   &_title {
     display: flex;
@@ -33,7 +33,7 @@
     gap: 25px;
     padding-right: 20px;
     padding-left: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
 
     &_1 {
       text-align: left;
@@ -47,7 +47,7 @@
   }
 
   &_poster {
-    margin-top: 40px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     overflow: hidden;

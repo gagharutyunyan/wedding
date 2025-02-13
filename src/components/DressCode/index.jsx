@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectCards } from 'swiper/modules';
+import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules';
 import { Palette } from '../Palette';
 
-import 'swiper/css';
-import 'swiper/css/effect-cards';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import './index.scss';
 
@@ -40,28 +40,28 @@ const Swipe = () => {
                 disableOnInteraction: false,
             }}
             zoom={true}
-            cardsEffect={{
-                perSlideRotate: 4,
-            }}
-            effect="cards"
-            grabCursor={true}
-            modules={[EffectCards, Autoplay]}
+            cssMode={true}
+            navigation={true}
+            pagination={true}
+            mousewheel={true}
+            keyboard={true}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             className="swiper-dress-code"
         >
             <SwiperSlide>
-                <img src="/5bf4a32591d7a2a101d62b9eff493aa8.jpg" alt="welcome" />
+                <img src="/db18333e28b241d4ae234eff585962c2.jpg" alt="welcome" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="/2d0588128d9d6d559524adc06b554b58.jpg" alt="welcome" />
+                <img src="/c44b468ec2e05453e94da1932183130d.jpg" alt="welcome" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="/5747dcd918f9b4ea7dcc0ab938ef55d5.jpg" alt="welcome" />
+                <img src="/ba90a116a6a1851d8a362dc0615e67f4.jpg" alt="welcome" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="/b1fef8dfed03a9396c597020f9ee3004.jpg" alt="welcome" />
+                <img src="/0412ef6d185258bb9044f451f681219e.jpg" alt="welcome" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="/f986b52a16b4311e462e2213944c4e29.jpg" alt="welcome" />
+                <img src="/2be7ed0c39165376f2b5063d5c487f2d.jpg" alt="welcome" />
             </SwiperSlide>
         </Swiper>
     );

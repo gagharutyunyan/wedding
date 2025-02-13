@@ -1,5 +1,5 @@
 .dress-code {
-  margin-top: 60px;
+  margin-top: 80px;
 
   &_title {
     display: flex;
@@ -33,35 +33,46 @@
     gap: 25px;
     padding-right: 40px;
     padding-left: 40px;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   &_poster {
-    margin-top: 60px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     overflow: hidden;
+
   }
 
   &_palette {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 50px;
   }
 }
 
 .swiper-dress-code {
-  width: 90%;
-  height: 500px;
-  margin-left: unset;
-  margin-right: unset;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  --swiper-navigation-color: white;
+  --swiper-pagination-color: white;
+  --swiper-pagination-bullet-inactive-color: red;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    font-weight: bold;
-    border-radius: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    & > img {
+      height: 100%;
+      width: 100%;
+
+    }
   }
 }

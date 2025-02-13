@@ -11,13 +11,21 @@ export const Timing = () => {
                 <li className="timing_list_item animate-appear">
                     <div className="timing_list_item-left">12:00</div>
                     <div className="timing_list_item-right1 outfit">
-                        <div className="timing_list_item-right">ВЕНЧАНИЕ В ЦЕРКВИ, ВОРОНЕЖ</div>
+                        <div className="timing_list_item-right">
+                            <span>
+                                ВЕНЧАНИЕ В ЦЕРКВИ, <strong>ВОРОНЕЖ</strong>
+                            </span>
+                        </div>
                     </div>
                 </li>
                 <li className="timing_list_item animate-appear">
                     <div className="timing_list_item-left h-33">15:30</div>
                     <div className="timing_list_item-right1 outfit">
-                        <div className="timing_list_item-right">СБОР ГОСТЕЙ</div>
+                        <div className="timing_list_item-right">
+                            <span>
+                                СБОР ГОСТЕЙ, <strong>ROYAL</strong>
+                            </span>
+                        </div>
                     </div>
                 </li>
                 <li className="timing_list_item animate-appear">

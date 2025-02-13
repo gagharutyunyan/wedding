@@ -14,6 +14,8 @@ import {
 } from './components';
 
 import './App.css';
+import { PhotoVideo } from './components/PhotoVideo/index.jsx';
+import { Contacts } from './components/Contacts/index.jsx';
 
 function App() {
     const { isPosterOpened, onOpenPoster } = useLoader();
@@ -34,7 +36,7 @@ function App() {
 
     return (
         <>
-            <PreviewPoster onOpenPoster={onOpenPoster} isPosterOpened={isPosterOpened} />
+            {!isPosterOpened && <PreviewPoster onOpenPoster={onOpenPoster} />}
             <Visibility visible={isPosterOpened}>
                 <Container>
                     <Video />
@@ -43,6 +45,8 @@ function App() {
                     <WeddingLocation />
                     {isPosterOpened && <Location />}
                     {isPosterOpened && <DressCode />}
+                    <PhotoVideo />
+                    <Contacts />
                 </Container>
             </Visibility>
             <Audio />

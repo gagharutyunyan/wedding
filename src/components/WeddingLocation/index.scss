@@ -1,7 +1,10 @@
 .wedding-location {
-  margin-top: 60px;
+  margin-top: 80px;
 
   &_poster {
+    & > img {
+      width: 100%;
+    }
   }
 
   &_title {
@@ -9,7 +12,7 @@
   }
 
   &_content {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 
   &_content_paragraph_1 {
@@ -29,7 +32,7 @@
     user-select: none;
 
     &-container {
-      margin-top: 30px;
+      margin-top: 40px;
       display: flex;
       justify-content: center;
     }

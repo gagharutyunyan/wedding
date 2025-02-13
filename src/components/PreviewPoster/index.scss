@@ -11,8 +11,6 @@
   width: 100vw;
   height: 100%;
   overflow: hidden;
-  position: fixed;
-  z-index: 1;
 
   &_content {
     margin-top: auto;
@@ -52,20 +50,8 @@
     margin-top: 10px;
     animation: appear 1s linear;
   }
-
-  &-transition {
-    animation: poster_animate 1.4s linear forwards;
-  }
 }
 
-@keyframes poster_animate {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: -1000px;
-  }
-}
 
 @keyframes left {
   0% {

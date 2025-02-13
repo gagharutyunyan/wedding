@@ -1,5 +1,5 @@
 .location {
-  margin-top: 60px;
+  margin-top: 80px;
 
   &_poster {
   }
@@ -9,11 +9,11 @@
   }
 
   &_content {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 
   &_content_paragraph_1 {
-    margin-top: 30px;
+    margin-top: 40px;
     padding: 0 20px;
   }
 
@@ -34,7 +34,7 @@
     user-select: none;
 
     &-container {
-      margin-top: 30px;
+      margin-top: 40px;
       display: flex;
       justify-content: center;
     }

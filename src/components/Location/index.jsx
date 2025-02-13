@@ -50,7 +50,7 @@ const Swipe = () => {
             ref={swiperRef}
             speed={1000}
             autoplay={{
-                delay: 3000,
+                delay: 4000,
                 pauseOnMouseEnter: false,
                 disableOnInteraction: false,
             }}

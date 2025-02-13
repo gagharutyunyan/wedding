@@ -74,7 +74,7 @@ export const Contacts = () => {
                     </a>
                 </div>
             </div>
-            <div className="photo-video_poster">
+            <div className="contacts_poster">
                 <img src="/DSC00624_resized.jpg" alt="" />
             </div>
         </div>

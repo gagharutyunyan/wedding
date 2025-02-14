@@ -16,6 +16,7 @@ import {
 import './App.css';
 import { PhotoVideo } from './components/PhotoVideo/index.jsx';
 import { Contacts } from './components/Contacts/index.jsx';
+import { Form } from './components/Form/index.jsx';
 
 function App() {
     const { isPosterOpened, onOpenPoster } = useLoader();
@@ -47,6 +48,7 @@ function App() {
                     {isPosterOpened && <DressCode />}
                     <PhotoVideo />
                     <Contacts />
+                    <Form/>
                 </Container>
             </Visibility>
             <Audio />

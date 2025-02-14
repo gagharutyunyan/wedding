@@ -2,7 +2,7 @@ import './index.scss';
 import { useState } from 'react';
 
 const token = '7812789435:AAGeOxORcwy9-GlTAYpxq13mYfrLLfcZ594';
-const chatId = 5206305825;
+const chatId = '@gag_jess_guest';
 
 export const Form = () => {
     const [isSend, setIsSend] = useState(false);

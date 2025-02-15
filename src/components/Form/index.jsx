@@ -66,7 +66,7 @@ export const Form = () => {
             <div className="animate-appear">
                 <div className="contacts_title">
                     <div className="contacts_title_line"></div>
-                    <span className="">Account</span>
+                    <span className="great">Account</span>
                 </div>
             </div>
             {isSend ? (

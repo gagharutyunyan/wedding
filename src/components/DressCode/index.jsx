@@ -10,7 +10,7 @@ export const DressCode = () => {
             <div className="animate-appear">
                 <div className="dress-code_title">
                     <div className="dress-code_title_line"></div>
-                    <span className="">Dress Code</span>
+                    <span className="great">Dress Code</span>
                 </div>
                 <div className="dress-code_description mont ">
                     Нам будет особенно приятно, <br />
@@ -21,11 +21,11 @@ export const DressCode = () => {
             <div className="dress-code_palette">
                 <Palette />
             </div>
-            <div className="dress-code_subtitle outfit">Девушки:</div>
+            <div className="dress-code_subtitle great">Девушки:</div>
             <div className="dress-code_poster">
                 <Swipe />
             </div>
-            <div className="dress-code_subtitle outfit">Парни:</div>
+            <div className="dress-code_subtitle great">Парни:</div>
             <div className="dress-code_poster">
                 <Swipe2 />
             </div>

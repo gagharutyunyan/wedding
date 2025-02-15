@@ -9,7 +9,7 @@ export const WeddingLocation = () => {
             <div className="wedding-location_content">
                 <div className="wedding-location_title welcome_title">
                     <div className="welcome_title_line"></div>
-                    <span className="animate-appear">Church of St. Sarkis</span>
+                    <span className="animate-appear great">Church of St. Sarkis</span>
                 </div>
                 <div className="wedding-location_content_paragraph_1 animate-appear mont">
                     Венчание произойдет в Церкви Святого Саркиса (Сурб Саркис), <strong>г. Воронеж</strong> - церковь Ново-Нахичеванской и

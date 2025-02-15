@@ -6,7 +6,7 @@ export const Contacts = () => {
             <div className="animate-appear">
                 <div className="contacts_title">
                     <div className="contacts_title_line"></div>
-                    <span className="">Contacts</span>
+                    <span className="great">Contacts</span>
                 </div>
                 <div className="contacts_description mont ">
                     Если у вас возникнут вопросы вы можете обратиться к нам по номеру телефона и в мессенджеры

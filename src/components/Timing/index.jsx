@@ -15,7 +15,7 @@ export const Timing = ({ onScrollReady }) => {
         <div className="timing">
             <div className="welcome_title">
                 <div className="welcome_title_line"></div>
-                <span className="animate-appear">Plan of the day</span>
+                <span className="animate-appear great">Plan of the day</span>
             </div>
             <ul className="timing_list mont">
                 <li className="timing_list_item animate-appear">

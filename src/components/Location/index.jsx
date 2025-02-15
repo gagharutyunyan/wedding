@@ -14,7 +14,7 @@ export const Location = () => {
             <div className="location_content">
                 <div className="location_title welcome_title">
                     <div className="welcome_title_line"></div>
-                    <span className="animate-appear">Royal</span>
+                    <span className="animate-appear great">Royal</span>
                 </div>
                 <div className="location_content_paragraph_1 animate-appear mont">
                     Наша свадьба пройдет в архитектурном комплексе , настоящем замке XIV века «Royal»

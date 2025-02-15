@@ -1,9 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, EffectCards } from 'swiper/modules';
 import { Palette } from '../Palette';
-
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 import './index.scss';
 
@@ -24,11 +21,11 @@ export const DressCode = () => {
             <div className="dress-code_palette">
                 <Palette />
             </div>
-            <div className="dress-code_subtitle great">Девушки:</div>
+            <div className="dress-code_subtitle outfit">Девушки:</div>
             <div className="dress-code_poster">
                 <Swipe />
             </div>
-            <div className="dress-code_subtitle great">Парни:</div>
+            <div className="dress-code_subtitle outfit">Парни:</div>
             <div className="dress-code_poster">
                 <Swipe2 />
             </div>
@@ -39,18 +36,16 @@ export const DressCode = () => {
 const Swipe = () => {
     return (
         <Swiper
-            speed={1500}
+            speed={700}
             autoplay={{
                 pauseOnMouseEnter: false,
                 disableOnInteraction: false,
             }}
-            zoom={true}
-            cssMode={true}
-            navigation={true}
-            pagination={true}
-            mousewheel={true}
-            keyboard={true}
-            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+            cardsEffect={{
+                perSlideRotate: 3,
+            }}
+            effect="cards"
+            modules={[EffectCards, Autoplay]}
             className="swiper-dress-code"
         >
             <SwiperSlide>
@@ -87,18 +82,17 @@ const Swipe = () => {
 const Swipe2 = () => {
     return (
         <Swiper
-            speed={1500}
+            speed={700}
             autoplay={{
                 pauseOnMouseEnter: false,
                 disableOnInteraction: false,
             }}
-            zoom={true}
-            cssMode={true}
-            navigation={true}
-            pagination={true}
-            mousewheel={true}
-            keyboard={true}
-            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+            cardsEffect={{
+                perSlideRotate: -6,
+                perSlideOffset: 2
+            }}
+            effect="cards"
+            modules={[EffectCards, Autoplay]}
             className="swiper-dress-code"
         >
             <SwiperSlide>

@@ -40,6 +40,7 @@
     margin-top: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
 
   }
@@ -60,27 +61,16 @@
 }
 
 .swiper-dress-code {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  --swiper-navigation-color: white;
-  --swiper-pagination-color: white;
-  --swiper-pagination-bullet-inactive-color: red;
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 240px;
+  height: 320px;
 
   .swiper-slide {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    & > img {
-      height: 100%;
-      width: 100%;
-
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
   }
 }

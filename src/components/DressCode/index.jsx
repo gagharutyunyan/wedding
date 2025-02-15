@@ -24,11 +24,11 @@ export const DressCode = () => {
             <div className="dress-code_palette">
                 <Palette />
             </div>
-            <div className="dress-code_subtitle great">Примеры с женщинами:</div>
+            <div className="dress-code_subtitle great">Девушки:</div>
             <div className="dress-code_poster">
                 <Swipe />
             </div>
-            <div className="dress-code_subtitle great">Примеры с мужчинами:</div>
+            <div className="dress-code_subtitle great">Парни:</div>
             <div className="dress-code_poster">
                 <Swipe2 />
             </div>

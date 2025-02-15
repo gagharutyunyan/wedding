@@ -1,6 +1,16 @@
 import './index.scss';
+import { useEffect } from 'react';
 
-export const Timing = () => {
+export const Timing = ({ onScrollReady }) => {
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                onScrollReady();
+            }
+        });
+        const swiper = document.querySelector('.timing');
+        observer.observe(swiper);
+    }, []);
     return (
         <div className="timing">
             <div className="welcome_title">

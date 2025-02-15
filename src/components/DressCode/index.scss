@@ -37,11 +37,17 @@
   }
 
   &_poster {
-    margin-top: 70px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     overflow: hidden;
 
+  }
+
+  &_subtitle {
+    margin-top: 70px;
+    font-size: 32px;
+    text-align: center;
   }
 
   &_palette {

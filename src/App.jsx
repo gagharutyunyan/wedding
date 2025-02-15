@@ -19,7 +19,7 @@ import { Contacts } from './components/Contacts/index.jsx';
 import { Form } from './components/Form/index.jsx';
 
 function App() {
-    const { isPosterOpened, onOpenPoster } = useLoader();
+    const { isPosterOpened, isAllReady, onOpenPoster, onScrollReady } = useLoader();
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -42,13 +42,17 @@ function App() {
                 <Container>
                     <Video />
                     {isPosterOpened && <Welcome />}
-                    <Timing />
-                    <WeddingLocation />
-                    {isPosterOpened && <Location />}
-                    {isPosterOpened && <DressCode />}
-                    <PhotoVideo />
-                    <Contacts />
-                    <Form/>
+                    <Timing onScrollReady={onScrollReady}/>
+                    {isAllReady && (
+                        <>
+                            <WeddingLocation />
+                            <Location />
+                            <DressCode />
+                            <PhotoVideo />
+                            <Contacts />
+                            <Form />
+                        </>
+                    )}
                 </Container>
             </Visibility>
             <Audio />

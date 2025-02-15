@@ -9,6 +9,10 @@ body {
     background-color: rgb(218, 219, 209);
 }
 
+.text_center {
+    text-align: center;
+}
+
 * {
     -webkit-touch-callout: none;
     -webkit-user-select: none;

@@ -49,8 +49,8 @@ function App() {
                             <Location />
                             <DressCode />
                             <PhotoVideo />
-                            <Contacts />
                             <Form />
+                            <Contacts />
                         </>
                     )}
                 </Container>

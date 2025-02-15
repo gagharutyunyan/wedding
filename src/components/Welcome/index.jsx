@@ -12,8 +12,7 @@ export const Welcome = () => {
         <div className="welcome">
             <div className="animate-appear">
                 <div className="welcome_title">
-                    <div className="welcome_title_line"></div>
-                    <span className="great">Dear Guests!</span>
+                    <span className="great text_center">Dear Guests!</span>
                 </div>
                 <div className="welcome_description mont ">
                     <div className="welcome_description_1">
@@ -23,6 +22,9 @@ export const Welcome = () => {
                     <div className="welcome_description_2">
                         С радостью и большой любовью хотим пригласить вас разделить с нами трогательный и
                         важный момент нашей жизни!
+                    </div>
+                    <div className="welcome_description_3 outfit">
+                        28 Апреля 2025
                     </div>
                 </div>
             </div>

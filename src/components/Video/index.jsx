@@ -14,8 +14,8 @@ export const Video = () => {
                 </div>
                 <div className="video_content_subtitle outfit">Wedding Day</div>
                 <div className="video_content_paragraph ">[ so this is love ]</div>
-                <div className="video_content_date outfit">28 / 04 / 25</div>
                 <span className="loader_down"></span>
+                <div className="video_content_date outfit">Листайте ниже</div>
             </div>
         </div>
     );

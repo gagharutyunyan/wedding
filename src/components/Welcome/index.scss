@@ -1,29 +1,14 @@
 .welcome {
-  margin-top: 60px;
+  padding-top: 60px;
 
   &_title {
     display: flex;
+    justify-content: center;
     gap: 15px;
     font-size: 40px;
 
     span {
       white-space: nowrap;
-    }
-
-    &_line {
-      position: relative;
-      width: 60px;
-
-      &:after {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        height: 2px;
-        background: black;
-        content: "";
-        width: 100%;
-        display: block;
-      }
     }
   }
 
@@ -43,6 +28,13 @@
     &_2 {
       text-align: left;
       margin-left: 100px;
+    }
+
+    &_3 {
+      margin-top: 10px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 24px;
     }
   }
 

@@ -1,16 +1,18 @@
-import './index.scss';
 import { useState } from 'react';
 
 const token = '7812789435:AAGeOxORcwy9-GlTAYpxq13mYfrLLfcZ594';
 const chatId = '@gag_jess_guest';
 
+import './index.scss';
+
 export const Form = () => {
     const [isSend, setIsSend] = useState(false);
     const [isSending, setIsSending] = useState(false);
+    const [isTouched, setIsTouched] = useState(false);
     const [name, setName] = useState('');
     const [details, setDetails] = useState('');
     const [allergic, setAllergic] = useState('');
-    const [noCome, setNoCome] = useState('');
+    const [noCome, setNoCome] = useState(false);
 
     const onChangeName = ({ target }) => {
         setName(target.value);
@@ -25,14 +27,17 @@ export const Form = () => {
     };
 
     const onChangeNoCome = ({ target }) => {
-        setNoCome(target.checked ? 'Нет' : 'Да');
+        setNoCome(target.checked);
     };
 
     const send = () => {
-        if (!name) return;
+        if (!name) {
+            setIsTouched(true);
+            return;
+        }
         setIsSending(true);
 
-        const text = `<strong>Имя</strong> - ${name}\n<strong>Семья</strong> - ${details || 'Не заполнено'}\n<strong>Аллергии</strong> - ${allergic || 'Не заполнено'}\n<strong>Придет?</strong> - ${noCome || 'Не заполнено, то есть придет'}`;
+        const text = `<strong>Имя</strong> - ${name}\n<strong>Семья</strong> - ${details || 'Не заполнено'}\n<strong>Аллергии</strong> - ${allergic || 'Не заполнено'}\n<strong>Придет?</strong> - ${noCome ? 'Нет' : 'Дв'}`;
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
         fetch(url, {
             method: 'POST',
@@ -66,7 +71,7 @@ export const Form = () => {
             <div className="animate-appear">
                 <div className="contacts_title">
                     <div className="contacts_title_line"></div>
-                    <span className="great">Account</span>
+                    <span className="great">Questions</span>
                 </div>
             </div>
             {isSend ? (
@@ -75,22 +80,22 @@ export const Form = () => {
                 </>
             ) : (
                 <>
-                    <div className="form_description mont ">
-                        Для нас и вас, ответьте, пожалуйста, на несколько вопросов
-                    </div>
+                    <div className="form_description mont ">Пожалуйста, выделите минуту Вашего времени</div>
                     <div className="form_poster">
-                        <label htmlFor="name" className="form_label mont">
-                            Ваше имя и фамилия <span>*</span>
-                        </label>
-                        <input
-                            onChange={onChangeName}
-                            id="name"
-                            className="form_input outfit"
-                            type="text"
-                            placeholder="Гагик Арутюнян"
-                            disabled={isSending}
-                            value={name}
-                        />
+                        <div className={isTouched && !name && 'form_error'}>
+                            <label htmlFor="name" className="form_label mont">
+                                Ваше имя и фамилия <span>*</span>
+                            </label>
+                            <input
+                                onChange={onChangeName}
+                                id="name"
+                                className="form_input form_input_name outfit"
+                                type="text"
+                                placeholder="Гагик Арутюнян"
+                                disabled={isSending}
+                                value={name}
+                            />
+                        </div>
                         <label htmlFor="details" className="form_label form_label_details mont">
                             С кем Вы планируете присутствовать?
                         </label>
@@ -126,7 +131,7 @@ export const Form = () => {
                                 type="checkbox"
                                 disabled={isSending}
                             />{' '}
-                            Если Вы НЕ планируете присутствовать, то можете выбрать
+                            К сожалению НЕ приду
                         </label>
                         <button className="form_btn" disabled={isSending} onClick={send}>
                             Отправить

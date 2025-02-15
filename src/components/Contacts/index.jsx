@@ -12,7 +12,10 @@ export const Contacts = () => {
                     Если у вас возникнут вопросы вы можете обратиться к нам по номеру телефона и в мессенджеры
                 </div>
                 <a className="contacts_tell outfit" href="tel:+79191640504" target="_blank">
-                    Гагик +79191640504
+                    Gagik +7 (919) 164-05-04
+                </a>
+                <a className="contacts_tell outfit" href="tel:+79525954407" target="_blank">
+                    Jessica +7 (952) 595-44-07
                 </a>
                 <div className="contacts-socials">
                     <a className="contacts-socials-item" href="https://t.me/js_gag" target="_blank">

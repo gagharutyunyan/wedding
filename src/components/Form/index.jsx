@@ -75,6 +75,9 @@ export const Form = () => {
     return (
         <div className="form">
             <div className="animate-appear">
+                <div className="contacts_title form_title">
+                    <span className="outfit">Просим вас дать ответ до 20 марта</span>
+                </div>
                 <div className="contacts_title">
                     <span className="great">Questions</span>
                 </div>

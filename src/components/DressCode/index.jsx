@@ -97,9 +97,6 @@ const Swipe2 = () => {
                 <img src="/8af87d162df0145142ec12cb650721ab.jpg" alt="welcome" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="/de4ede490d2a878197703403a95bf67a.jpg" alt="welcome" />
-            </SwiperSlide>
-            <SwiperSlide>
                 <img src="/f17c83e5a8c1c26aff7224c93652a476.jpg" alt="welcome" />
             </SwiperSlide>
             <SwiperSlide>
@@ -107,6 +104,9 @@ const Swipe2 = () => {
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/804e3e173fe409d95b866a220725619a.jpg" alt="welcome" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src="/de4ede490d2a878197703403a95bf67a.jpg" alt="welcome" />
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/2be7ed0c39165376f2b5063d5c487f2d.jpg" alt="welcome" />

@@ -76,11 +76,11 @@ export const Contacts = () => {
                     </a>
                 </div>
             </div>
-            <div className="contacts_poster">
-                <video preload="auto" muted playsInline autoPlay="autoplay" loop="loop">
-                    <source src="/last_video.mp4" type="video/mp4" />
-                </video>
-            </div>
+            {/*<div className="contacts_poster">*/}
+            {/*    <video preload="auto" muted playsInline autoPlay="autoplay" loop="loop">*/}
+            {/*        <source src="/last_video.mp4" type="video/mp4" />*/}
+            {/*    </video>*/}
+            {/*</div>*/}
         </div>
     );
 };

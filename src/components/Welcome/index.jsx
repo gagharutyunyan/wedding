@@ -13,7 +13,7 @@ export const Welcome = () => {
         <div className="welcome">
             <div className="animate-appear">
                 <div className="welcome_title">
-                    <span className="great text_center">Dear Guests!</span>
+                    <span className="great text_center">Дорогие Гости!</span>
                 </div>
                 <div className="welcome_description mont ">
                     <div className="welcome_description_1">

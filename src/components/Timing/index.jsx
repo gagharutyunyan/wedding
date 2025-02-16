@@ -4,7 +4,7 @@ export const Timing = () => {
     return (
         <div className="timing">
             <div className="welcome_title">
-                <span className="animate-appear great">Plan of the day</span>
+                <span className="animate-appear great">Тайминг</span>
             </div>
             <ul className="timing_list mont">
                 <li className="timing_list_item animate-appear">

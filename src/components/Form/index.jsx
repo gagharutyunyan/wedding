@@ -79,7 +79,7 @@ export const Form = () => {
                     <span className="outfit">Просим вас дать ответ до 20 марта</span>
                 </div>
                 <div className="contacts_title">
-                    <span className="great">Questions</span>
+                    <span className="great">Вопросы</span>
                 </div>
             </div>
             {isSend && !isEdit ? (

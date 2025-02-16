@@ -9,7 +9,7 @@ export const DressCode = () => {
         <div className="dress-code">
             <div className="animate-appear">
                 <div className="dress-code_title">
-                    <span className="great">Dress Code</span>
+                    <span className="great">Дресс Код</span>
                 </div>
                 <div className="dress-code_description mont ">
                     Нам будет особенно приятно, <br />

@@ -5,7 +5,7 @@ export const PhotoVideo = () => {
         <div className="photo-video">
             <div className="animate-appear">
                 <div className="photo-video_title">
-                    <span className="great">Photo & Video</span>
+                    <span className="great">Фото и Видео</span>
                 </div>
                 <div className="photo-video_description mont ">
                     Так же мы создали телеграмм-чат нашего праздника, где можно будет поделиться фотографиями

@@ -1,0 +1,39 @@
+.timer {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  color: #453529;
+
+  text-shadow: 1px 1px 0 #e6e4de,
+  -1px -1px 0px #e6e4de,
+  1px -1px 0px #e6e4de,
+  -1px 1px 0px #e6e4de;
+
+  &_time {
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    & span {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+  }
+
+  & p {
+    font-size: 2rem;
+    margin: 0;
+
+  }
+
+
+  &_labels {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+  }
+}

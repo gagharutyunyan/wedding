@@ -3,11 +3,11 @@ import './index.scss';
 export const Contacts = () => {
     return (
         <div className="contacts">
-            <div className="animate-appear">
+            <div className="">
                 <div className="contacts_title">
-                    <span className="great">Contacts</span>
+                    <span className="great animate-appear">Contacts</span>
                 </div>
-                <div className="contacts_description mont ">
+                <div className="contacts_description mont animate-appear">
                     Если у вас возникнут вопросы вы можете обратиться к нам по номеру телефона и в мессенджеры
                 </div>
                 <a className="contacts_tell outfit" href="tel:+79191640504" target="_blank">

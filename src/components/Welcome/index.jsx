@@ -4,6 +4,7 @@ import { Autoplay, EffectCube } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/effect-cards';
+import { Timer } from '../Timer';
 
 import './index.scss';
 
@@ -23,9 +24,8 @@ export const Welcome = () => {
                         С радостью и большой любовью хотим пригласить вас разделить с нами трогательный и
                         важный момент нашей жизни!
                     </div>
-                    <div className="welcome_description_3 outfit">
-                        28 Апреля 2025
-                    </div>
+                    <div className="welcome_description_3 outfit">28 Апреля 2025</div>
+                    <Timer />
                 </div>
             </div>
             <div className="welcome_poster">

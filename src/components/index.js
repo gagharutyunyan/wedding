@@ -11,3 +11,4 @@ export * from './DressCode';
 export * from './Timing';
 export * from './Container';
 export * from './Palette';
+export * from './Timer';

@@ -9,6 +9,10 @@
     width: 100%;
     margin-top: 25px;
     padding: 0 20px;
+
+    &_name {
+      width: 100%;
+    }
   }
 
   &_description {
@@ -71,6 +75,13 @@
     .form_input_name {
       background-color: #e6d2d2;
       border-bottom: 2px solid red;
+      animation: linear 1.5s animateFormInput forwards;
+      animation-iteration-count: 1;
+    }
+
+    .form_label {
+      animation: linear 1.5s animateFormLabel forwards;
+      animation-iteration-count: 1;
     }
   }
 
@@ -90,5 +101,41 @@
     &:disabled {
       opacity: 0.6;
     }
+  }
+}
+
+@keyframes animateFormInput {
+  0% {
+    background: rgb(182 182 182 / 10%);
+    border-bottom: 2px solid black;
+  }
+  33% {
+    background-color: #e6d2d2;
+    border-bottom: 2px solid red;
+  }
+  66% {
+    background: rgb(182 182 182 / 10%);
+    border-bottom: 2px solid black;
+  }
+  100% {
+    background-color: #e6d2d2;
+    border-bottom: 2px solid red;
+  }
+}
+
+@keyframes animateFormLabel {
+  0% {
+    color: black;
+  }
+  33% {
+    color: red;
+
+  }
+  66% {
+    color: black;
+  }
+  100% {
+    color: red;
+
   }
 }

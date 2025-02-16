@@ -66,7 +66,7 @@ export const Form = () => {
                 console.error('There was a problem with the fetch operation:', error);
             })
             .finally(() => {
-                setIsEdit(false)
+                setIsEdit(false);
                 setIsSend(true);
                 setIsSending(false);
             });
@@ -90,9 +90,11 @@ export const Form = () => {
                 </>
             ) : (
                 <>
-                    <div className="form_description mont ">Пожалуйста, выделите минуту Вашего времени</div>
-                    <div className="form_poster">
-                        <div className={isTouched && !name && 'form_error'}>
+                    <div className="form_description mont animate-appear">
+                        Пожалуйста, выделите минуту Вашего времени
+                    </div>
+                    <div className="form_poster animate-appear">
+                        <div className={`form_poster_name ${isTouched && !name && 'form_error'}`}>
                             <label htmlFor="name" className="form_label mont">
                                 Ваше имя и фамилия <span>*</span>
                             </label>
@@ -107,15 +109,15 @@ export const Form = () => {
                             />
                         </div>
                         <label htmlFor="details" className="form_label form_label_details mont">
-                            С кем Вы планируете присутствовать?
+                            С кем Вы планируете присутствовать?(Имя Фамилия)
                         </label>
-                        <input
+                        <textarea
                             onChange={onChangeDetails}
                             id="details"
                             className="form_input outfit"
-                            type="text"
-                            placeholder="Гагик, Jessica, և այլն..."
+                            placeholder="Пример: Гагик Арутюнян, Jessica Harutyunyan, և այլն..."
                             disabled={isSending}
+                            rows={3}
                             value={details}
                         />
                         <label htmlFor="allergic" className="form_label form_label_details mont">

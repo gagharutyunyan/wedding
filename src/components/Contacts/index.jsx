@@ -77,7 +77,9 @@ export const Contacts = () => {
                 </div>
             </div>
             <div className="contacts_poster">
-                <img src="/DSC00624_resized.jpg" alt="" />
+                <video preload="auto" muted playsInline autoPlay="autoplay" loop="loop">
+                    <source src="/last_video.mp4" type="video/mp4" />
+                </video>
             </div>
         </div>
     );

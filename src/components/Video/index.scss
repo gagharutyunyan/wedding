@@ -60,11 +60,12 @@
       position: relative;
       font-size: 30px;
       text-align: center;
-      font-weight: 700;
+      font-weight: 600;
+      color: #675c5c;
       animation: appear_1 1.2s linear forwards;
       backface-visibility: hidden;
       white-space: nowrap;
-      margin-top: 460px;
+      margin-top: 320px;
     }
 
     &_paragraph {

@@ -28,8 +28,12 @@
     justify-content: center;
     margin-bottom: 100px;
 
-    & > img {
-      width: 75%;
+    & > video {
+      object-fit: cover;
+      background-size: cover;
+      height: 400px;
+
+      width: 260px;
       border-radius: 30px;
       border: 2px solid black;
       transform: rotate3d(-44, 98, 0, -29deg)

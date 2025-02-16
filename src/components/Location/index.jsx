@@ -59,7 +59,7 @@ const Swipe = () => {
             creativeEffect={{
                 prev: {
                     shadow: true,
-                    translate: ['-20%', 0, -1],
+                    translate: ['20%', 0, -1],
                 },
                 next: {
                     translate: ['100%', 0, 0],
@@ -75,6 +75,9 @@ const Swipe = () => {
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/royal_3.jpg" alt="welcome" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src="/royal_4.jpg" alt="welcome" />
             </SwiperSlide>
         </Swiper>
     );

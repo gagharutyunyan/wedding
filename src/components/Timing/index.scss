@@ -12,16 +12,18 @@
 
     &_item {
       display: flex;
-      align-items: center;
       justify-content: space-between;
       gap: 15px;
       border-bottom: 1px solid #b7b7b7;
-      padding: 15px 3px;
+      padding: 10px 3px 15px 3px;
+
+      &-bottom {
+        font-size: 16px;
+      }
 
       &-left {
         font-size: 32px;
         width: 25%;
-        line-height: 0;
         flex: 0.35;
       }
 
@@ -34,6 +36,9 @@
       }
 
       &-right1 {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
         width: 75%;
       }
     }

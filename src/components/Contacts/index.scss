@@ -26,17 +26,13 @@
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
 
     & > video {
       object-fit: cover;
       background-size: cover;
-      height: 400px;
+      height: 100%;
 
-      width: 260px;
-      border-radius: 30px;
-      border: 2px solid black;
-      transform: rotate3d(-44, 98, 0, -29deg)
+      width: 100%;
     }
   }
 

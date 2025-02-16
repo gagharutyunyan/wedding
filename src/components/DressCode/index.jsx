@@ -87,12 +87,11 @@ const Swipe2 = () => {
                 disableOnInteraction: false,
             }}
             cardsEffect={{
-                perSlideRotate: -6,
-                perSlideOffset: 2,
+                perSlideRotate: 3,
             }}
             effect="cards"
             modules={[EffectCards, Autoplay]}
-            className="swiper-dress-code"
+            className="swiper-dress-code swiper-dress-code2"
         >
             <SwiperSlide>
                 <img src="/8af87d162df0145142ec12cb650721ab.jpg" alt="welcome" />

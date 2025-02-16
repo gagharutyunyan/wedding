@@ -8,12 +8,8 @@ import './index.scss';
 export const Location = () => {
     return (
         <div className="location">
-            <div className="location_poster">
-                <Swipe />
-            </div>
             <div className="location_content">
                 <div className="location_title welcome_title">
-                    <div className="welcome_title_line"></div>
                     <span className="animate-appear great">Royal</span>
                 </div>
                 <div className="location_content_paragraph_1 animate-appear mont">
@@ -28,6 +24,9 @@ export const Location = () => {
                         Перейти на карту
                     </a>
                 </div>
+            </div>
+            <div className="location_poster">
+                <Swipe />
             </div>
         </div>
     );

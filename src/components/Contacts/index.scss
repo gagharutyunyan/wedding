@@ -3,27 +3,13 @@
 
   &_title {
     display: flex;
+    justify-content: center;
     gap: 15px;
-    font-size: 40px;
+    font-size: 44px;
+    font-weight: 600;
 
     span {
       white-space: nowrap;
-    }
-
-    &_line {
-      position: relative;
-      width: 60px;
-
-      &:after {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        height: 2px;
-        background: black;
-        content: "";
-        width: 100%;
-        display: block;
-      }
     }
   }
 
@@ -38,9 +24,15 @@
 
   &_poster {
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
 
     & > img {
-      width: 100%;
+      width: 75%;
+      border-radius: 30px;
+      border: 2px solid black;
+      transform: rotate3d(-44, 98, 0, -29deg)
     }
   }
 

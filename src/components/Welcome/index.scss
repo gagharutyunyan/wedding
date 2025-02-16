@@ -5,7 +5,8 @@
     display: flex;
     justify-content: center;
     gap: 15px;
-    font-size: 40px;
+    font-size: 44px;
+    font-weight: 600;
 
     span {
       white-space: nowrap;
@@ -21,6 +22,7 @@
     margin-top: 20px;
 
     &_1 {
+      margin-top: 20px;
       text-align: left;
       max-width: 75%;
     }

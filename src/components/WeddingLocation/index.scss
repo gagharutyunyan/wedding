@@ -1,22 +1,23 @@
 .wedding-location {
-  margin-top: 80px;
+  margin-top: 60px;
 
   &_poster {
+    margin-top: 60px;
     & > img {
       width: 100%;
     }
   }
 
   &_title {
-    font-size: 32px;
+    font-size: 40px;
+    overflow: hidden;
   }
 
   &_content {
-    margin-top: 60px;
   }
 
   &_content_paragraph_1 {
-    margin-top: 30px;
+    margin-top: 40px;
     padding: 0 20px;
   }
 

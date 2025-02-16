@@ -9,7 +9,6 @@ export const DressCode = () => {
         <div className="dress-code">
             <div className="animate-appear">
                 <div className="dress-code_title">
-                    <div className="dress-code_title_line"></div>
                     <span className="great">Dress Code</span>
                 </div>
                 <div className="dress-code_description mont ">
@@ -89,7 +88,7 @@ const Swipe2 = () => {
             }}
             cardsEffect={{
                 perSlideRotate: -6,
-                perSlideOffset: 2
+                perSlideOffset: 2,
             }}
             effect="cards"
             modules={[EffectCards, Autoplay]}

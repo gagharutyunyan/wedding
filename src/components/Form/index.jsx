@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 const token = '7812789435:AAGeOxORcwy9-GlTAYpxq13mYfrLLfcZ594';
 const chatId = '@gag_jess_guest';
@@ -6,6 +6,7 @@ const chatId = '@gag_jess_guest';
 import './index.scss';
 
 export const Form = () => {
+    const blockRef = useRef(null);
     const [isSend, setIsSend] = useState(false);
     const [isSending, setIsSending] = useState(false);
     const [isTouched, setIsTouched] = useState(false);
@@ -69,6 +70,9 @@ export const Form = () => {
                 setIsEdit(false);
                 setIsSend(true);
                 setIsSending(false);
+                if (blockRef.current) {
+                    blockRef.current.scrollIntoView({ block: 'center', behavior: 'smooth' });
+                }
             });
     };
 
@@ -79,15 +83,17 @@ export const Form = () => {
                     <span className="outfit">Просим вас дать ответ до 20 марта</span>
                 </div>
                 <div className="contacts_title">
-                    <span className="great">Вопросы</span>
+                    <span className="great" ref={blockRef}>
+                        Вопросы
+                    </span>
                 </div>
             </div>
             {isSend && !isEdit ? (
                 <>
-                    <div className="form_description mont ">Спасибо за информацию</div>
+                    <div className="form_description mont " style={{ fontSize: 24 }}>Спасибо за информацию</div>
                     <div className="form_description mont ">
                         <button className="form_btn" disabled={isSending} onClick={onChangeEdit}>
-                            Редактировать
+                            Редактировать анкету
                         </button>
                     </div>
                 </>

@@ -64,9 +64,9 @@ const Time = () => {
 
     return (
         <div className="timer_time">
-            <span>{timer.day}</span> <span>:</span> <span>{timer.hour}</span> <span>:</span>
-            <span>{timer.minute}</span> <span>:</span>
-            <span>{timer.second}</span>
+            <span>0</span> <span>:</span> <span>00</span> <span>:</span>
+            <span>00</span> <span>:</span>
+            <span>00</span>
         </div>
     );
 };

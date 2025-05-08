@@ -13,7 +13,7 @@ export const PhotoVideo = () => {
                 </div>
             </div>
             <div className="wedding-location_btn-container mont">
-                <a href="https://t.me/photo_video_g" target="_blank" className="wedding-location_btn">
+                <a href="https://t.me/+TS0gjAj-0OdkNzY6" target="_blank" className="wedding-location_btn">
                     Вступить в чат
                 </a>
             </div>

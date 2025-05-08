@@ -26,7 +26,7 @@ export const DressCode = () => {
             <div className="dress-code_poster">
                 <Swipe />
             </div>
-            <div className="dress-code_subtitle great">Парни: Серый</div>
+            <div className="dress-code_subtitle great">Парни: Серый, Оливковый</div>
             <div className="dress-code_poster">
                 <Swipe2 />
             </div>
